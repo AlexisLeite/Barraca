@@ -121,8 +121,8 @@ Total en LM dólares:     $    ${round((costoContado + costoMl) / precioDolar)}
       }
       function handleLast(ev) {
         if (ev.target.value) {
-          if (lastPesos) handlePesos();
-          else handleDolares();
+          if (lastPesos) handlePesos(ev);
+          else handleDolares(ev);
         }
       }
 
