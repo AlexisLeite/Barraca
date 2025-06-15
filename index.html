@@ -109,12 +109,14 @@ Total en LM dólares:     $    ${round((costoContado + costoMl) / precioDolar)}
         if (ev.target.value) {
           lastPesos = true;
           print(getValue('basePesos'))
+          document.basePesos.value = ''
         }
       }
       function handleDolares(ev) {
         if (ev.target.value) {
           lastPesos = false;
           print(getValue('baseDolares') * getValue('precioDolar'))
+          document.baseDolares.value = ''
         }
       }
       function handleLast(ev) {
